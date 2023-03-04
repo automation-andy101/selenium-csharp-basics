@@ -20,19 +20,19 @@ namespace csharp_nunit_seleniun
         public void TestCustomMethods()
         {
             // Enter text into text input box
-            SeleniumCustomSetMethods.EnterText("name", "Some random text", PropertyType.Id);
+            SeleniumCustomSetMethodsForPageObjects.EnterText("name", "Some random text", PropertyType.Id);
 
             // Check that correct text appears in element
-            Console.WriteLine("The value in the Switch to alert Example input box is: " + SeleniumCustomGetMethods.GetText("name", "Some random text", PropertyType.Id));
+            Console.WriteLine("The value in the Switch to alert Example input box is: " + SeleniumCustomGetMethodsForPageObjects.GetText("name", "Some random text", PropertyType.Id));
 
             // Click a checkbox
-            SeleniumCustomSetMethods.Click("checkBoxOption1", PropertyType.Id);
+            SeleniumCustomSetMethodsForPageObjects.Click("checkBoxOption1", PropertyType.Id);
 
             // Select option1 from dropdown
-            SeleniumCustomSetMethods.SelectDropdown("dropdown-class-example", "Option1", PropertyType.Name);
+            SeleniumCustomSetMethodsForPageObjects.SelectDropdown("dropdown-class-example", "Option1", PropertyType.Name);
 
             // Check that correct text appears in element
-            Console.WriteLine("The value in the Dropdown Example dropdown list is: " + SeleniumCustomGetMethods.GetTextFromDropdown("dropdown-class-example", "Option1", PropertyType.Name));
+            Console.WriteLine("The value in the Dropdown Example dropdown list is: " + SeleniumCustomGetMethodsForPageObjects.GetTextFromDropdown("dropdown-class-example", "Option1", PropertyType.Name));
         }
         
 

@@ -33,7 +33,7 @@ namespace csharp_nunit_seleniun
 
 
             // Select option1 from dropdown
-            SeleniumCustomSetMethods.SelectDropdown("dropdown-class-example", "Option1", PropertyType.Name);
+            SeleniumCustomSetMethodsForPageObjects.SelectDropdown("dropdown-class-example", "Option1", PropertyType.Name);
             page.ddlExampleDropDown.Click();
             
         }
